@@ -2,8 +2,8 @@ package com.example.w3d1_sqlite_simple;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doMagic(View view) {
-
         UsersDatabaseHelper usersDatabaseHelper = new UsersDatabaseHelper(getApplicationContext());
         SQLiteDatabase db = usersDatabaseHelper.getWritableDatabase();
 
