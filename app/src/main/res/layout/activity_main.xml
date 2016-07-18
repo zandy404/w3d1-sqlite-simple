@@ -18,5 +18,11 @@
     <Button
         android:onClick="doMagic"
         android:layout_width="match_parent"
+        android:text="Do Magic"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Data"/>
 </LinearLayout>

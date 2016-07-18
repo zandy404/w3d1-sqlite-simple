@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doMagic(View view) {
+        Log.d(TAG, "doMagic: ");
         UsersDatabaseHelper usersDatabaseHelper = new UsersDatabaseHelper(getApplicationContext());
         SQLiteDatabase db = usersDatabaseHelper.getWritableDatabase();
 
         db.beginTransaction();
         try {
+            Log.d(TAG, "doMagic: try");
             ContentValues values = new ContentValues();
             values.put(UsersDatabaseHelper.KEY_USER_NAME, EXAMPLE_NAME);
             values.put(UsersDatabaseHelper.KEY_AGE, EXAMPLE_AGE);
