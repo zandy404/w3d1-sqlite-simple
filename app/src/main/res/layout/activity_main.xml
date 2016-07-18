@@ -24,5 +24,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Read Data"/>
+        android:text="Read Data"
+        android:onClick="readMagic"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Data (cursor)"
+        android:onClick="readMagicCursor"/>
 </LinearLayout>
